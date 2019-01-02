@@ -28,7 +28,7 @@ score_y = iris.data[:test_size, 3].reshape(-1, 1) # petal width
 predictions = model.predict(score_x)
 
 # Mean squared error
-mean_sq = mean_squared_error(score_y, predictions)
+mean_sq = mean_squared_horror(score_y, predictions)
 cdsw.track_metric("mean_sq_err", mean_sq)
 print("Mean squared error: %.2f"% mean_sq)
 

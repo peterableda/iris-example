@@ -4,9 +4,9 @@
 
 import pickle
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model.pickle', 'rb'))
 
-def predict(args):
-  iris_x = float(args.get('petal_length'))
+def run(args):
+  iris_x = float(args.get('length'))
   result = model.predict(iris_x)
   return result[0][0]
